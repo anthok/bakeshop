@@ -25,7 +25,7 @@ apt-get install python3 python3-pip uuid-runtime
 pip install -r requirements.txt
 ```
 ```bash
-git clone --recursive git@github.com:anthok/Bakeshop.git 
+git clone --recursive git@github.com:anthok/bakeshop.git 
 ```
 
 ## Filling Directory Structure
@@ -93,7 +93,7 @@ lite images:
       "FIRST_USER_NAME":"pi",
       "FIRST_USER_PASS":"raspberry",
       "ENABLE_SSH":1,
-      "STAGE_LIST":"stage0 stage1 stage2 stage-Bakeshop",
+      "STAGE_LIST":"stage0 stage1 stage2 stage-bakeshop",
       "skip_stage": ["stage2", "stage4", "stage5"],
       "skip_image": ["stage2", "stage3", "stage4", "stage5"],
       "fillings": [
@@ -133,13 +133,13 @@ as is. If you are trying to build a later stage, consult the pi-gen documentatio
 and reorder the stages accordingly.
 
 * `skip_stage`
-A Bakeshop specific configuration which tells Bakeshop which stages should be
+A Bakeshop specific configuration that tells Bakeshop which stages should be
 skipped. For example: If you are building a raspbian lite image you can skip stages
 3,4, and 5. This configuration tells Bakeshop to place the SKIP file in each of
 the listed stages. See pi-gen documentation for more details on the SKIP file.
 
 * `skip_image`
-A Bakeshop specific configuration which tells Bakeshop which image creations
+A Bakeshop specific configuration that tells Bakeshop which image creations
 should be skipped. For example: If you are building a raspbian lite image you can
 skip image building for stages 4, and 5. This configuration tells Bakeshop to
 place the SKIP_IMAGE file in each of the listed stages. See pi-gen documentation for
@@ -178,7 +178,7 @@ Bakeshops custom stage. Each filling is required to have a name and a run_priori
 
 ## How to run
 ```
-sudo python3 Bakeshop.py -r recipe/recipe.json {clean}
+sudo python3 bakeshop.py -r recipe/recipe.json {clean}
 ```
 
 ## Bakeshop Options
