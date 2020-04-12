@@ -1,4 +1,4 @@
-## Bakeshop
+![Bakeshop Logo](https://i.imgur.com/dIB8opo.png)  
 Bakeshop is an easy to use extensible wrapper for pi-gen that reduces the manual
 overhead of generating raspberry pi images. Bakeshop uses a JSON based
 configuration file called a recipe to define a pi-gen environment before image
