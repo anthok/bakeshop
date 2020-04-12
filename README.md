@@ -29,7 +29,7 @@ git clone --recursive git@github.com:anthok/bakeshop.git
 
 ## Filling Directory Structure
 Filling names can be named anything, however the contents of a particular
-filling must follow pi-gens standards. Bakeshop uses strict checking to ensure 
+filling **must follow pi-gens standards**. Bakeshop uses strict checking to ensure 
 only pi-gen related files are in the filling directory. The files/ directory can be used
 to facilitate any other files that need to be incorporated into a filling.
 
@@ -39,19 +39,21 @@ When creating a filling the following directory structure must be met:
     |
     +--filling_name
     |             |
-    |             +--01-run.sh
+    |             +--00-debconf
     |             +--00-packages
+    |             +--00-packages-nr
+    |             +--01-run.sh
     |             \--files
     |                    |
-    |                    +--keys.txt
     |                    \--any_addtional_files_you_need
     \--filling_name
                   |
-                  +--01-run.sh
+                  +--00-debconf
                   +--00-packages
+                  +--00-packages-nr
+                  +--01-run.sh
                   \--files
                          |
-                         +-- resolv.conf
                          \--any_addtional_files_you_need
 ```                
                 
