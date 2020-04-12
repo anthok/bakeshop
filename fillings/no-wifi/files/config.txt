@@ -1,0 +1,1 @@
+dtoverlay=pi3-disable-wifi
