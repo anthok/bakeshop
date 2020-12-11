@@ -123,6 +123,8 @@ class Baker(object):
     shutil.make_archive(folder_name, 'zip', self.deploy_path)
     shutil.move("{}.zip".format(folder_name), image_folder)
     logger.info("Image location: {}".format(image_folder))
+    if os.path.exists(self.deploy_path):
+      shutil.rmtree(self.deploy_path)
 
   def clean(self):
     logger.info("Cleaning bakeshop stage from pi-gen")
